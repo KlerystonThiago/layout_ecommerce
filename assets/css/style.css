@@ -60,6 +60,9 @@ header{
     position: relative;
     background: rgb(224, 224, 224);
     box-shadow: 0px 5px 15px #ccc;
+    background-image: url('../img/verg.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 .container{
@@ -110,7 +113,7 @@ nav{
 .bar-1{
     width: 60%;
     height: 4px;
-    background-color: #444;
+    background-color: #fff;
     border-radius: 10px;
     margin-top: 16.5px;
 }
@@ -118,7 +121,7 @@ nav{
 .bar-2{
     width: 40%;
     height: 4px;
-    background-color: #444;
+    background-color: #fff;
     margin-top: 3px;
     margin-bottom: 3px;
     border-radius: 10px;
@@ -127,7 +130,7 @@ nav{
 .bar-3{
     width: 20%;
     height: 4px;
-    background-color: #444;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -136,7 +139,7 @@ nav{
     line-height: 50px;
     font-size: 30px;
     font-family: 'Play', sans-serif;
-    color: #444;
+    color: white;
 }
 
 .box_auth p{
@@ -147,7 +150,7 @@ nav{
     padding: 0px 10px;
     font-family: 'Play', sans-serif;
     font-size: 15px;
-    color: #444;
+    color: #fff;
 }
 
 .box_auth p i:after{    
@@ -193,11 +196,11 @@ nav{
 
 .resumo h1{
     margin-bottom: 10px;
-    color: #555;
+    color: #fff;
 }
 
 .resumo p{
-    color: #555;
+    color: #fff;
 }
 
 .resumo .btn-banner{
@@ -205,11 +208,11 @@ nav{
     padding: 10px 20px;
     margin-top: 20px;
     background-color: transparent;
-    border: 2px solid #555;
+    border: 2px solid #fff;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s;
-    color: #555;
+    color: #fff;
 }
 
 .btn-banner:hover{
@@ -331,6 +334,9 @@ footer{
     width: 100%;
     min-height: 10px;
     display:flex;    
+    background-image: url('../img/verg.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 footer .row{
@@ -350,11 +356,11 @@ footer nav ul li{
     padding: 10px 20px;
     text-decoration: none;
     list-style-type: none;
-    color: #555;
+    color: #fff;
 }
 
 footer nav ul li a{
-    color: #555;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -368,7 +374,7 @@ footer nav ul li a{
 .redes i{
     padding: 5px 5px;
     font-size: 20px;
-    color: #555;
+    color: #fff;
 }
 
 .card-favoritar{
@@ -406,4 +412,52 @@ footer nav ul li a{
 
 .ico-favoritar{
     color: royalblue;
+}
+
+@media(min-width:300px) and (max-width:578px){
+    .box_ico{
+        width: 20%;
+    }
+    .box_logo{
+        width: 60%;
+    }
+    .box_logo span{
+        font-size: 20px;
+    }
+    .box_auth{
+        width: 20%;
+        display: flex;
+        justify-content: end;
+    }
+    .box_auth p{
+        display: none;
+    }
+    .box_auth :nth-child(3){
+        display: block;
+        padding-right: 20px;
+    }   
+    header .container{
+        width: 100%;
+    }
+    .box-banner{
+        flex-direction: column;
+    }
+    .resumo{
+        width: 100%;
+        order:1;
+        margin-top: -150px;
+        align-items: center;
+    }
+    .resumo h1, p{
+        text-align: center;
+        line-height: 25px;
+    }
+    .resumo .btn-banner{
+        margin-top: 30px;
+    }
+    .img-produto-banner{
+        width: 100%;
+        order: 0;
+        margin-top: -50px;
+    }
 }
